@@ -1,25 +1,29 @@
 import random
 class Player(object):
     """A player for a game"""
-    def __init(selfself,name):
+    def __init(self,name, score):
         self.name = name
-        self.hand = cards.Hand()
+        self.score = score
+
     def __str__(self):
         rep = self.name
-        rep = rep +" "+str(self.hand.cards[0])
+        rep = rep +" "+str(self.score)
         return rep
 
 def ask_num(question, low, high):
+
     while True:
-        num = input("enter how many people are playing: (1-4)")
+
         try:
             num = int(input(question))
             if num in range(low, high):
                 return num
             else:
                 print("that is out of range")
+
         except:
             print("that was not a number")
+
 def ask_yes_no(question):
     """Ask a yes or no question"""
     response = None

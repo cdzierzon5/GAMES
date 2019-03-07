@@ -13,7 +13,7 @@ class Card(object):
              "8", "9", "10", "J", "Q", "K"]
     suits = ["c", "d", "h", "s"]
 
-    def __init__(self, rank, suit):
+    def __init__(self, rank, suit, face_up = True):
         self.rank = rank
         self.suit = suit
         self.face_up = True
